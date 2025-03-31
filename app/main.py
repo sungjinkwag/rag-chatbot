@@ -15,7 +15,7 @@ app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:5173",  # Local 개발 서버 주소
-                   "https://rag-chatbot-backend-ge95.onrender.com"],  # Backend Server URL(Render)
+                   "https://react-chatbot-frontend.vercel.app"],  # React Frontend
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
